@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap");
+
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke * -1;
+  @for $i from $from through $stroke {
+    @for $j from $from through $stroke {
+      $shadow: append($shadow, $i * 1px $j * 1px 0 $color, comma);
+    }
+  }
+  @return $shadow;
+}
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
+#navbar {
+  background-color: #151515;
+  .navbar-logo {
+    width: 100px;
+  }
+  .navbar-pc-menu li {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .navbar-phone-sidemenu {
+    width: 100vw;
+    padding: 10vh 0;
+    background-color: #151515;
+  }
+  .navbar-phone-sidemenu li {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+#hero {
+  background-color: #151515;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  @media (max-width: 867px) {
+    height: auto;
+    padding-top: 15vh;
+  }
+  .hero-left-heading {
+    color: #fff;
+    font-family: Ranchers;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    .hero-left-heading-yellow {
+      color: #f7d432;
+    }
+    @media (max-width: 867px) {
+      font-size: 100px;
+      letter-spacing: 11px;
+    }
+  }
+  .hero-left-description {
+    color: #D4D0D0;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 18px;
+    }
+  }
+  .hero-img {
+    @media (min-width: 866px) {
+      position: absolute;
+    }
+  }
+  .hero-scrollicon-div {
+    width: 61px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    bottom: -4%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .hero-scrolldown-text {
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    bottom: 6%;
+    color: #2f2f2f;
+    transform: translateX(-50%);
+    font-family: Syne;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px; /* 221.429% */
+  }
+}
+
+#Tokenomics {
+  background-image: url("../public/assets/tokenomicsbg.png");
+  background-size: cover;
+  padding: 14vh 0;
+  @media (max-width: 468px) {
+    padding: 10vh 0;
+  }
+  .tokenomics-title {
+    color: #000;
+    @include stroke(9, #fff);
+    font-family: light_pixel_7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    @media (max-width: 867px) {
+      -webkit-text-stroke-width: 5;
+      font-size: 40px;
+      @include stroke(5, #fff);
+      letter-spacing: 1.6px;
+    }
+  }
+  .tokenomics-description {
+    color: #d0d0d0;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 16px;
+    }
+  }
+  .tokenomics-card1 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card2 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card3 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card4 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tokenomics-card-text {
+    color: #000;
+    text-align: center;
+    @include stroke(2, #fff);
+    font-family: light_pixel_7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.8px;
+    position: absolute;
+    @media (max-width: 867px) {
+      font-size: 15px;
+      letter-spacing: 0.64px;
+      @include stroke(1, #fff);
+    }
+  }
+  .tokenomics-contact-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.85);
+    @media (max-width: 867px) {
+      padding: 3vw 1vw;
+    }
+  }
+  .tokenomics-contact-title {
+    color: #000;
+    @include stroke(2, #fff);
+    font-family: light_pixel_7;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    @media (max-width: 867px) {
+      text-align: center;
+      font-size: 18px;
+      line-height: 31px;
+      letter-spacing: 0.18px;
+      @include stroke(1, #fff);
+    }
+  }
+  .tokenomics-contact-id {
+    color: #fff;
+    font-family: light_pixel_7;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    word-wrap: break-word;
+    @media (max-width: 867px) {
+      text-align: center;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.16px;
+    }
+  }
+  .tokenomics-star1 {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .tokenomics-star2 {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .tokenomics-star3 {
+    position: absolute;
+    top: 65%;
+    right: 2%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .tokenomicsphonestar {
+    display: none;
+    @media (max-width: 867px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+#HowToBuy {
+  background-image: url("../public/assets/howtobuybg.png");
+  background-size: cover;
+  padding: 13vh 0;
+  @media (max-width: 468px) {
+    padding: 8vh 0;
+  }
+  .HowToBuy-title {
+    color: #000;
+    @include stroke(9, #fff);
+    font-family: light_pixel_7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    @media (max-width: 867px) {
+      -webkit-text-stroke-width: 5;
+      font-size: 40px;
+      letter-spacing: 1.6px;
+      @include stroke(5, #fff);
+      text-align: center;
+    }
+  }
+  .howtobuytext {
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 28%;
+    @media (max-width: 867px) {
+      font-size: 18px;
+      width: 100%;
+    }
+  }
+  .howtobuy-star {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .howtobuy-starphone {
+    display: none;
+    @media (max-width: 867px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 35%;
+    }
+  }
+}
+#Roadmap {
+  background-image: url("../public/assets/Roadmapbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .roadmap-title {
+    color: #000;
+    @include stroke(9, #fff);
+    font-family: light_pixel_7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    @media (max-width: 867px) {
+      font-size: 40px;
+      letter-spacing: 1.6px;
+      @include stroke(5, #fff);
+    }
+  }
+  .roadmap-description {
+    color: #d9d9d9;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 16px;
+    }
+  }
+  .roadmap-card {
+    width: 30%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 867px) {
+      width: 100%;
+    }
+  }
+  .roadmap-card-title {
+    color: #fafafa;
+    text-align: center;
+    font-family: light_pixel_7;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+    @media (max-width: 867px) {
+      font-size: 28px;
+    }
+  }
+  .roadmap-card-description {
+    color: #d5d5d5;
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    width: 90%;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 16px;
+    }
+  }
+  .roadmap-star1 {
+    position: absolute;
+    right: 1%;
+    top: 4%;
+  }
+  .roadmap-star2 {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+  }
+  .roadmap-star3 {
+    position: absolute;
+    left: 0%;
+    top: 65%;
+  }
+}
+#footer {
+  background-image: url("../public/assets/footerbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 867px) {
+    background-image: url("../public/assets/footerbgphone.png");
+  }
+  .footer-title {
+    color: #000;
+    @include stroke(8, #fff);
+    font-family: light_pixel_7;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.88px;
+    @media (max-width: 867px) {
+      @include stroke(5, #fff);
+      font-size: 40px;
+      line-height: 62px;
+      letter-spacing: 1.6px;
+    }
+  }
+  .footer-copyright {
+    color: rgba(176, 176, 176, 0.68);
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  .footer-menuoptions {
+    color: #efefef;
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer-star1 {
+    position: absolute;
+    top: -12%;
+    right: 15%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
+  .footer-star2 {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    @media (max-width: 867px) {
+      right: 15%;
+      top: 60%;
+    }
+  }
+  .footer-star1phone {
+    display: none;
+    position: absolute;
+    @media (max-width: 867px) {
+      right: 0;
+      top: 10%;
+      position: absolute;
+      display: block;
+    }
+  }
+}
