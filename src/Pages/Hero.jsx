@@ -79,7 +79,7 @@ export default function Hero() {
       </div>
       <img
         src="./assets/Heroimg.png"
-        className="md:w-full hero-img right-0 bottom-0 w-3/5 object-conain"
+        className="md:w-full hero-img right-0 bottom-0 w-3/5 custom-height-88"
         alt="Punch"
       />
     </section>

@@ -14,10 +14,10 @@ export default function App() {
     <BrowserRouter>
       <Navbar />
       <Hero />
-      <Tokenomics />
+      {/* <Tokenomics />
       <HowToBuy />
       <Roadmap/>
-      <Footer />
+      <Footer /> */}
     </BrowserRouter>
   );
 }
