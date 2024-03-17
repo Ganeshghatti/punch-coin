@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <img src="/assets/footergif.gif" alt="" className="w-3/4 md:w-11/12" />
+      <img src="/assets/footergif.gif" alt="" className="w-3/4 md:w-full" />
     </footer>
   );
 }

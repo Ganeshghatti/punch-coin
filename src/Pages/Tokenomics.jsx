@@ -42,7 +42,7 @@ export default function Tokenomics() {
             </svg>
             <p className="tokenomics-right-div-text">Contract renounced</p>
           </div>
-          <div className="flex gap-2 items-center mt-6">
+          <div className="flex gap-2 items-center mt-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48"
@@ -57,7 +57,7 @@ export default function Tokenomics() {
             </svg>
             <p className="tokenomics-right-div-text">Buy/Sell Tax 0%</p>
           </div>
-          <div className="flex gap-2 items-center mt-6">
+          <div className="flex gap-2 items-center  mt-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48"
@@ -72,7 +72,7 @@ export default function Tokenomics() {
             </svg>
             <p className="tokenomics-right-div-text">Liquidity Burnt</p>
           </div>
-          <div className="flex gap-2 items-center mt-6">
+          <div className="flex gap-2 items-center  mt-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48"

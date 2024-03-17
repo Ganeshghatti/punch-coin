@@ -28,7 +28,7 @@ body {
 .custom-width-88 {
   width: 88%;
 }
-.custom-height-88{
+.custom-height-88 {
   height: 88%;
 }
 .button-filled {
@@ -43,6 +43,12 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  @media (max-width: 867px) {
+    width: auto;
+    height: auto;
+    padding: 7px 18px;
+    font-size: 20px;
+  }
 }
 .button-yellow-filled {
   width: 196px;
@@ -56,4 +62,10 @@ body {
   line-height: normal;
   border-radius: 5px;
   background: #f7d432;
+  @media (max-width: 867px) {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 7px 18px;
+  }
 }
