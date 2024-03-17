@@ -16,8 +16,8 @@ export default function App() {
       <Hero />
       <Tokenomics />
       <HowToBuy />
-      {/* <Roadmap/>
-      <Footer /> */}
+      <Roadmap/>
+      <Footer />
     </BrowserRouter>
   );
 }

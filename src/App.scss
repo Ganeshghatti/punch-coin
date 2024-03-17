@@ -259,7 +259,7 @@
     z-index: 5;
   }
   .howtobuytext-phone {
-    color: #FFF;
+    color: #fff;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -280,22 +280,16 @@
   }
 }
 #Roadmap {
-  background-image: url("../public/assets/Roadmapbg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #151515;
   .roadmap-title {
-    color: #000;
-    @include stroke(9, #fff);
-    font-family: light_pixel_7;
-    font-size: 70px;
+    color: #fff;
+    font-family: Ranchers;
+    font-size: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 2.8px;
     @media (max-width: 867px) {
-      font-size: 40px;
-      letter-spacing: 1.6px;
-      @include stroke(5, #fff);
+      font-size: 45px;
     }
   }
   .roadmap-description {
@@ -309,79 +303,71 @@
       font-size: 16px;
     }
   }
-  .roadmap-card {
-    width: 30%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 867px) {
-      width: 100%;
-    }
-  }
   .roadmap-card-title {
-    color: #fafafa;
-    text-align: center;
-    font-family: light_pixel_7;
-    font-size: 28px;
+    color: #f7d432;
+    font-family: Ranchers;
+    font-size: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 90%;
     @media (max-width: 867px) {
-      font-size: 28px;
+      font-size: 50px;
     }
   }
   .roadmap-card-description {
-    color: #d5d5d5;
-    text-align: center;
-    font-family: "Noto Sans";
-    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    width: 90%;
     line-height: normal;
     @media (max-width: 867px) {
-      font-size: 16px;
+      font-size: 20px;
     }
-  }
-  .roadmap-star1 {
-    position: absolute;
-    right: 1%;
-    top: 4%;
-  }
-  .roadmap-star2 {
-    position: absolute;
-    right: 15%;
-    top: 25%;
-  }
-  .roadmap-star3 {
-    position: absolute;
-    left: 0%;
-    top: 65%;
   }
 }
 #footer {
-  background-image: url("../public/assets/footerbg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  @media (max-width: 867px) {
-    background-image: url("../public/assets/footerbgphone.png");
+  background: #151515;
+  .footer-div1-div1 {
+    border: 5px dashed #fff;
+    background: #f7d432;
+    position: absolute;
+    transform: rotate(-5.738deg);
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
   }
-  .footer-title {
+  .footer-div1-div1-text {
+    transform: rotate(-5.74deg);
     color: #000;
-    @include stroke(8, #fff);
-    font-family: light_pixel_7;
-    font-size: 47px;
+    font-family: Poppins;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (max-width: 867px) {
+      font-size: 26px;
+    }
+  }
+  .footer-div2-div2 ul li {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.88px;
+  }
+  .footer-title {
+    color: #f7d432;
+    font-family: Ranchers;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     @media (max-width: 867px) {
-      @include stroke(5, #fff);
-      font-size: 40px;
-      line-height: 62px;
-      letter-spacing: 1.6px;
+      font-size: 45px;
     }
   }
   .footer-copyright {
