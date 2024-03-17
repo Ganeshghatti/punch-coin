@@ -330,6 +330,9 @@
     padding: 10px;
     overflow: hidden;
     white-space: nowrap;
+    @media (max-width: 867px) {
+      padding: 6px;
+    }
   }
   .footer-div1-div1-text {
     transform: rotate(-5.74deg);
@@ -341,7 +344,7 @@
     line-height: normal;
     animation: moveRightToLeft 15s linear infinite;
     @media (max-width: 867px) {
-      font-size: 26px;
+      font-size: 24px;
     }
   }
 
@@ -370,53 +373,6 @@
     line-height: normal;
     @media (max-width: 867px) {
       font-size: 45px;
-    }
-  }
-  .footer-copyright {
-    color: rgba(176, 176, 176, 0.68);
-    font-family: "Noto Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    @media (max-width: 867px) {
-      font-size: 18px;
-      text-align: center;
-    }
-  }
-  .footer-menuoptions {
-    color: #efefef;
-    font-family: "Noto Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .footer-star1 {
-    position: absolute;
-    top: -12%;
-    right: 15%;
-    @media (max-width: 867px) {
-      display: none;
-    }
-  }
-  .footer-star2 {
-    position: absolute;
-    top: 40%;
-    right: 0%;
-    @media (max-width: 867px) {
-      right: 15%;
-      top: 60%;
-    }
-  }
-  .footer-star1phone {
-    display: none;
-    position: absolute;
-    @media (max-width: 867px) {
-      right: 0;
-      top: 10%;
-      position: absolute;
-      display: block;
     }
   }
 }
