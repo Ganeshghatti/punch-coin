@@ -3,10 +3,18 @@ import React from "react";
 export default function HowToBuy() {
   return (
     <section id="HowToBuy" className="flex flex-col items-center relative">
-      <p className="HowToBuy-title w-3/4 md:w-11/12 ml-16 md:ml-0">How To Buy</p>
+      <div className="gifBackground"></div>
+      
+      <p className="HowToBuy-title w-3/4 md:w-11/12 ml-16 md:ml-0">
+        How To Buy
+      </p>
       <div className="w-11/12 md:w-11/12 flex md:flex-col justify-between items-center">
         <div className="flex flex-col w-3/4 items-center md:items-stretch justify-center md:flex-row md:w-11/12 md:justify-between">
-          <img src="./assets/HowToBuyArt.png" className="md:hidden w-11/12 object-cover" alt="" />
+          <img
+            src="./assets/HowToBuyArt.png"
+            className="md:hidden w-11/12 object-cover"
+            alt=""
+          />
           <img
             src="./assets/HowToBuyArtphone.png"
             className="hidden md:block object-cover custom-width-30"
