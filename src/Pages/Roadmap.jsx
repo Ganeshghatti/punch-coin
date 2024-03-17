@@ -4,7 +4,7 @@ export default function Roadmap() {
   return (
     <section
       id="Roadmap"
-      className="flex items-center justify-center py-24 relative"
+      className="flex items-center justify-center py-24 relative md:py-16"
     >
       <div className="w-4/5 flex flex-col gap-4 md:w-11/12">
         <p className="roadmap-title">ROADMAP</p>

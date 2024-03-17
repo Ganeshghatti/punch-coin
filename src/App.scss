@@ -220,6 +220,9 @@
   background-size: cover;
   padding: 16vh 0;
   height: 100%;
+  @media (max-width: 867px) {
+    padding: 8vh 0;
+  }
   .gifBackground {
     position: absolute;
     right: 0;
