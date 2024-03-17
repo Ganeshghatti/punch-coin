@@ -13,11 +13,7 @@ export default function Hero() {
       id="hero"
       className="w-screen flex items-center md:flex-col md:justify-end" 
     >
-      <img
-        src="./assets/Designs/herostar3.png"
-        className="hero-star3 w-fit"
-        alt=""
-      />
+      <img src="/assets/scrollarrow.png" alt="" className="scroll-arrow"/>
       <div
         className="hero-left w-2/5 flex flex-col gap-4 justify-center md:w-11/12"
         style={{ marginLeft: "10vw" }}

@@ -12,28 +12,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 export default function Footer() {
-  const [scale, setscale] = useState({ scale: 1 });
-
-  const scalehandleClick = () => {
-    setscale((prevState) => ({
-      scale: 0.9,
-    }));
-  };
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-      { breakpoint: 3000, settings: { slidesToShow: 5, slidesToScroll: 2 } }, // Desktop
-      { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 2 } }, // Tablet
-      { breakpoint: 464, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // Mobile
-    ],
-  };
-
   return (
     <footer
       id="footer"
@@ -45,14 +23,27 @@ export default function Footer() {
           alt=""
           className="w-3/4 md:w-11/12"
         />
-        <div className="footer-div1-div1">
-          <Slider {...settings}>
-            <p className="footer-div1-div1-text">PUNCH BLAST</p>{" "}
-            <p className="footer-div1-div1-text">PUNCH BLAST</p>
-            <p className="footer-div1-div1-text">PUNCH BLAST</p>
-            <p className="footer-div1-div1-text">PUNCH BLAST</p>
-            <p className="footer-div1-div1-text">PUNCH BLAST</p>
-          </Slider>
+        <div className="footer-div1-div1 flex gap-16">
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>{" "}
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>{" "}
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>{" "}
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
+          <p className="footer-div1-div1-text">PUNCH BLAST</p>
         </div>
       </div>
       <div className="flex w-3/4 md:w-11/12 justify-between items-center md:items-start footer-div2-div2 mt-36 md:mt-16 md:flex-col md:gap-6">
@@ -79,7 +70,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <img src="/assets/footergif.gif" alt="" className="w-3/4 md:w-11/12"/>
+      <img src="/assets/footergif.gif" alt="" className="w-3/4 md:w-11/12" />
     </footer>
   );
 }

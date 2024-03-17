@@ -6,6 +6,7 @@ export default function Tokenomics() {
       id="Tokenomics"
       className="w-full h-auto flex flex-col items-center gap-4 relative"
     >
+      <img src="/assets/scrollarrow.png" alt="" className="scroll-arrow" />
       <div className="svgBackground"></div>
       <div className="gifBackground"></div>
       <div className="flex flex-col gap-6 w-4/5 md:w-11/12">
@@ -17,10 +18,13 @@ export default function Tokenomics() {
           corner.
         </p>
       </div>
-      
       <div className="flex w-4/5 md:w-11/12 md:flex-col justify-between md:gap-8 mt-8">
         <div className="tokenomics-piechart-div flex flex-col gap-4 custom-width-55 md:w-11/12">
-          <img src="./assets/tokenomicsimg.png" alt="" className="w-3/5 md:w-full" />
+          <img
+            src="./assets/tokenomicsimg.png"
+            alt=""
+            className="w-3/5 md:w-full"
+          />
         </div>
         <div className="flex flex-col custom-width-45 md:w-full tokenomics-right">
           <div className="flex gap-2 items-center">
@@ -86,7 +90,11 @@ export default function Tokenomics() {
               <br /> 1,000,000,000 $PUNCH
             </p>
           </div>
-          <img src="/assets/tokenomicscontactbutton.png" alt="" className="cursor-pointer"/>
+          <img
+            src="/assets/tokenomicscontactbutton.png"
+            alt=""
+            className="cursor-pointer"
+          />
         </div>
       </div>
     </section>

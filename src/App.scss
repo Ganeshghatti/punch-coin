@@ -53,6 +53,16 @@
     height: auto;
     padding-top: 15vh;
   }
+  .scroll-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    bottom: -12%;
+    @media (max-width: 867px) {
+      display: none;
+    }
+  }
   .hero-left-heading {
     color: #fff;
     font-family: Ranchers;
@@ -84,38 +94,6 @@
       position: absolute;
     }
   }
-  .hero-scrollicon-div {
-    width: 61px;
-    height: 66px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #292929;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
-    bottom: -4%;
-    @media (max-width: 867px) {
-      display: none;
-    }
-  }
-  .hero-scrolldown-text {
-    position: absolute;
-    left: 50%;
-    z-index: 999;
-    bottom: 6%;
-    color: #2f2f2f;
-    transform: translateX(-50%);
-    font-family: Syne;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 31px; /* 221.429% */
-  }
 }
 
 #Tokenomics {
@@ -126,6 +104,16 @@
   @media (max-width: 867px) {
     padding: 14vh 0;
   }
+  .scroll-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    top: -3%;
+    @media (min-width: 867px) {
+      display: none;
+    }
+  }
   .svgBackground {
     position: absolute;
     top: 0;
@@ -135,7 +123,7 @@
     z-index: 2;
     background-size: cover;
     @media (min-width: 867px) {
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1434" height="865" viewBox="0 0 1434 865" fill="none"><path d="M-6 42.716C-6 42.716 377.218 33.7232 602.5 33.7232C627.5 33.7232 637 0 637 0H774C774 0 784.563 33.9543 795 33.7232C1053.5 28.0005 1434 33.7232 1434 33.7232V865H-6V42.716Z" fill="url(%23paint0_linear_114_715)"/><defs><linearGradient id="paint0_linear_114_715" x1="776" y1="114.042" x2="1075" y2="112.84" gradientUnits="userSpaceOnUse"><stop stop-color="%23F7D432"/><stop offset="1" stop-color="%23917C1D" stop-opacity="0.59"/></linearGradient></defs></svg>');
+      background-image: url("../public/assets/tokenomicsbg.png");
     }
     @media (max-width: 867px) {
       background-image: url("../public/assets/tokenomicsbgphone.png");
@@ -153,9 +141,9 @@
     background-image: url("../public/assets/tokenomics.gif");
     background-size: cover;
     @media (min-width: 867px) {
-      top: 4%;
+      top: 0%;
       width: 50%;
-      height: 96%;
+      height: 100%;
     }
     @media (max-width: 867px) {
       width: 100%;
@@ -339,8 +327,9 @@
     bottom: -10%;
     left: 0;
     width: 100%;
-    height: auto;
     padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .footer-div1-div1-text {
     transform: rotate(-5.74deg);
@@ -350,8 +339,18 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    animation: moveRightToLeft 12s linear infinite;
     @media (max-width: 867px) {
       font-size: 26px;
+    }
+  }
+
+  @keyframes moveRightToLeft {
+    from {
+      transform: translateX(50vw);
+    }
+    to {
+      transform: translateX(-50vw);
     }
   }
   .footer-div2-div2 ul li {
