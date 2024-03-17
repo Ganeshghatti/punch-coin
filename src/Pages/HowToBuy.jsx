@@ -4,51 +4,165 @@ export default function HowToBuy() {
   return (
     <section id="HowToBuy" className="flex flex-col items-center relative">
       <div className="gifBackground"></div>
-      
-      <p className="HowToBuy-title w-3/4 md:w-11/12 ml-16 md:ml-0">
-        How To Buy
-      </p>
-      <div className="w-11/12 md:w-11/12 flex md:flex-col justify-between items-center">
-        <div className="flex flex-col w-3/4 items-center md:items-stretch justify-center md:flex-row md:w-11/12 md:justify-between">
-          <img
-            src="./assets/HowToBuyArt.png"
-            className="md:hidden w-11/12 object-cover"
-            alt=""
-          />
-          <img
-            src="./assets/HowToBuyArtphone.png"
-            className="hidden md:block object-cover custom-width-30"
-            alt=""
-          />
-          <div className="flex justify-evenly md:pb-12 md:flex-col md:w-2/3 custom-width-88 self-end md:self-auto">
-            <p className="howtobuytext">
-              <a href="https://radium.io/swap/">
-                {" "}
-                Open https://
-                <br />
-                radium.io/swap/
-              </a>
-            </p>
-            <p className="howtobuytext">Connect your Solana wallet</p>
-            <p className="howtobuytext">Click the Swap button</p>
-          </div>
-        </div>
+
+      <p className="HowToBuy-title w-3/4 md:w-11/12 flex items-end">
+        HOW TO{" "}
         <img
-          src="./assets/HowToBuyimg.png"
-          className="w-1/4 md:w-11/12"
-          alt=""
+          src="/assets/HowToBuyHeading.png"
+          alt="BUY"
+          className="md:hidden"
         />
+        <img
+          src="/assets/HowToBuyHeadingphone.png"
+          alt="BUY"
+          className="hidden md:block"
+        />
+      </p>
+      <p className="HowToBuy-description w-3/4 md:w-11/12">
+        Lace up, step into the ring, and feel the electric buzz of anticipation.
+        <br className="md:hidden" />
+        Here's how to PUNCH with precision and power.
+      </p>
+      <div className="w-3/4 md:w-11/12 flex mt-8 flex-col">
+        <div className="flex w-3/4 items-center md:w-11/12 justify-between md:hidden HowToBuy-art-div">
+          <img src="./assets/HowToBuyimg1.png" alt="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            className="md:hidden"
+          >
+            <path
+              d="M25 42.5L37.5 30L25 17.5"
+              stroke="white"
+              stroke-opacity="0.3"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            className="md:hidden"
+          >
+            <path
+              d="M25 42.5L37.5 30L25 17.5"
+              stroke="white"
+              stroke-opacity="0.6"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            className="md:hidden"
+          >
+            <path
+              d="M25 42.5L37.5 30L25 17.5"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>{" "}
+          <img src="./assets/HowToBuyimg2.png" alt="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            className="md:hidden"
+          >
+            <path
+              d="M25 42.5L37.5 30L25 17.5"
+              stroke="white"
+              stroke-opacity="0.3"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            className="md:hidden"
+          >
+            <path
+              d="M25 42.5L37.5 30L25 17.5"
+              stroke="white"
+              stroke-opacity="0.6"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            className="md:hidden"
+          >
+            <path
+              d="M25 42.5L37.5 30L25 17.5"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <img src="./assets/HowToBuyimg3.png" alt="" />
+        </div>
+        <div className="md:flex w-11/12 items-start flex-col gap-6 hidden HowToBuy-art-div-phone">
+          <img src="./assets/HowToBuyimg1.png" alt="" />
+          <a href="https://app.thruster.finance" className="howtobuytext-phone">
+            Open https://
+            <br />
+            app.thruster.finance/
+          </a>
+          <img src="./assets/HowToBuyimg2.png" alt="" />
+          <p className="howtobuytext-phone">
+            Connect your
+            <br className="md:hidden" /> EVM wallet
+          </p>
+          <img src="./assets/HowToBuyimg3.png" alt="" />
+          <p className="howtobuytext-phone">
+            Click the
+            <br className="md:hidden" /> Swap button
+          </p>
+        </div>
+        <div className="HowToBuyText-div flex justify-between md:hidden custom-width-88">
+          <a href="https://app.thruster.finance" className="howtobuytext">
+            Open https://
+            <br />
+            app.thruster.finance/
+          </a>
+          <p className="howtobuytext">
+            Connect your
+            <br className="md:hidden" /> EVM wallet
+          </p>
+          <p className="howtobuytext">
+            Click the
+            <br className="md:hidden" /> Swap button
+          </p>
+        </div>
       </div>
-      <img
-        src="./assets/Designs/howtobuystar.png"
-        alt=""
-        className="howtobuy-star"
-      />
-      <img
-        src="./assets/Designs/howtobuystarphone.png"
-        alt=""
-        className="howtobuy-starphone"
-      />
     </section>
   );
 }

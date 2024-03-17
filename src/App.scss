@@ -218,7 +218,7 @@
   position: relative;
   width: 100%;
   background-size: cover;
-  padding: 13vh 0;
+  padding: 16vh 0;
   height: 100%;
   .gifBackground {
     position: absolute;
@@ -231,21 +231,40 @@
     height: 100%;
   }
   .HowToBuy-title {
-    color: #000;
-    @include stroke(9, #fff);
-    font-family: light_pixel_7;
-    font-size: 70px;
+    color: #fff;
+    font-family: Ranchers;
+    font-size: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 2.8px;
+    z-index: 5;
     @media (max-width: 867px) {
-      -webkit-text-stroke-width: 5;
-      font-size: 40px;
-      letter-spacing: 1.6px;
-      @include stroke(5, #fff);
-      text-align: center;
+      font-size: 45px;
     }
+  }
+  .HowToBuy-description {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 5;
+  }
+  .HowToBuy-art-div,
+  .HowToBuyText-div {
+    z-index: 5;
+  }
+  .HowToBuy-art-div-phone {
+    z-index: 5;
+  }
+  .howtobuytext-phone {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   .howtobuytext {
     color: #fff;
@@ -254,27 +273,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 28%;
+    width: 25%;
     @media (max-width: 867px) {
       font-size: 18px;
-      width: 100%;
-    }
-  }
-  .howtobuy-star {
-    position: absolute;
-    top: 10%;
-    left: 65%;
-    @media (max-width: 867px) {
-      display: none;
-    }
-  }
-  .howtobuy-starphone {
-    display: none;
-    @media (max-width: 867px) {
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 35%;
     }
   }
 }
