@@ -63,6 +63,13 @@
       display: none;
     }
   }
+  .hero-left{
+    margin-left: 10vw;
+    @media (max-width: 867px) {
+      margin-left: 0;
+    }
+
+  }
   .hero-left-heading {
     color: #fff;
     font-family: Ranchers;
@@ -74,7 +81,7 @@
       color: #f7d432;
     }
     @media (max-width: 867px) {
-      font-size: 90px;
+      font-size: clamp(60px, 15vw, 90px); 
       letter-spacing: 11px;
     }
   }

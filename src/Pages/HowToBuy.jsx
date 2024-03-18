@@ -5,7 +5,7 @@ export default function HowToBuy() {
     <section id="HowToBuy" className="flex flex-col items-center relative gap-4">
       <div className="gifBackground"></div>
 
-      <p className="HowToBuy-title w-3/4 md:w-11/12 flex items-end">
+      <p className="HowToBuy-title w-3/4 md:w-11/12 flex items-end md:flex-wrap">
         HOW TO{" "}
         <img
           src="/assets/HowToBuyHeading.png"

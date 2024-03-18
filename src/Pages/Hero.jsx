@@ -16,7 +16,6 @@ export default function Hero() {
       <img src="/assets/scrollarrow.png" alt="" className="scroll-arrow"/>
       <div
         className="hero-left w-2/5 flex flex-col gap-4 justify-center md:w-11/12"
-        style={{ marginLeft: "10vw" }}
       >
         <p className="hero-left-heading">
           BLAST
