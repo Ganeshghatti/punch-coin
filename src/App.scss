@@ -229,6 +229,7 @@
     font-weight: 400;
     line-height: normal;
     z-index: 5;
+    white-space: nowrap;
     @media (max-width: 867px) {
       font-size: 45px;
     }
