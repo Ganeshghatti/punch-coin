@@ -65,10 +65,10 @@ export default function Navbar() {
             </li>
             <div className="flex gap-12 items-center flex-col">
               <div className="flex gap-6">
-                <a href="https://twitter.com/Soli_inu">
+                <a href="https://twitter.com/BlstPunch">
                   <img src="/assets/twitter.png" alt="" />
                 </a>
-                <a href="http://t.me/soli_inu">
+                <a href="https://t.me/BlastPnch">
                   <img src="/assets/telegram.png" alt="" />
                 </a>
               </div>
