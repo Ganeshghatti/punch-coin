@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Tooltip from "@mui/material/Tooltip";
 
 export default function Tokenomics() {
+  const [msg, setmsg] = useState("copy");
+  const handleCopyToClipboard = () => {
+    const textToCopy = "0x9aCbd03bE2852136680766F7B6Ba0074872396de";
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setmsg("Text copied to clipboard:");
+      setTimeout(() => {
+        setmsg("copy");
+      }, 1000);
+    });
+  };
   return (
     <section
       id="Tokenomics"
@@ -13,9 +24,10 @@ export default function Tokenomics() {
         <p className="tokenomics-title">TOKENOMICS</p>
         <p className="tokenomics-description w-3/4 md:w-full">
           Straight right, lightning uppercut, agile sidestep, devastating liver
-          shot - that's the rhythm of victory with $PUNCH.<br/>Each token is a punch
-          thrown in the fight for dominance, each investor a warrior in our
-          corner.
+          shot - that's the rhythm of victory with $PUNCH.
+          <br />
+          Each token is a punch thrown in the fight for dominance, each investor
+          a warrior in our corner.
         </p>
       </div>
       <div className="flex w-4/5 md:w-11/12 md:flex-col justify-between md:gap-8 mt-8">
@@ -90,11 +102,14 @@ export default function Tokenomics() {
               <br /> 1,000,000,000 $PUNCH
             </p>
           </div>
-          <img
-            src="/assets/tokenomicscontactbutton.png"
-            alt=""
-            className="cursor-pointer"
-          />
+          <Tooltip title={msg}>
+            <img
+              src="/assets/tokenomicscontactbutton.png"
+              alt=""
+              className="cursor-pointer"
+              onClick={handleCopyToClipboard}
+            />
+          </Tooltip>
         </div>
       </div>
     </section>
