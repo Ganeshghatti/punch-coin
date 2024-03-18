@@ -6,10 +6,10 @@ export default function Tokenomics() {
   const handleCopyToClipboard = () => {
     const textToCopy = "0x9aCbd03bE2852136680766F7B6Ba0074872396de";
     navigator.clipboard.writeText(textToCopy).then(() => {
-      setmsg("Text copied to clipboard:");
+      setmsg("Text copied to clipboard");
       setTimeout(() => {
         setmsg("copy");
-      }, 1000);
+      }, 3000);
     });
   };
   return (
