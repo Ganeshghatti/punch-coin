@@ -13,7 +13,7 @@ export default function Tokenomics() {
         <p className="tokenomics-title">TOKENOMICS</p>
         <p className="tokenomics-description w-3/4 md:w-full">
           Straight right, lightning uppercut, agile sidestep, devastating liver
-          shot - that's the rhythm of victory with $PUNCH.Each token is a punch
+          shot - that's the rhythm of victory with $PUNCH.<br/>Each token is a punch
           thrown in the fight for dominance, each investor a warrior in our
           corner.
         </p>
