@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-screen flex items-center md:flex-col md:justify-end" 
+      className="w-full flex items-center md:flex-col md:justify-end" 
     >
       <img src="/assets/scrollarrow.png" alt="" className="scroll-arrow"/>
       <div
@@ -28,7 +28,7 @@ export default function Hero() {
           memecoin. Every move you make, every trade you take, puts you at the
           heart of the action.
         </p>
-        <a href="https://www.google.com/" onClick={scalehandleClick}>
+        <a href="https://app.thruster.finance/" onClick={scalehandleClick}>
           <button
             className="button-yellow-filled"
             style={{

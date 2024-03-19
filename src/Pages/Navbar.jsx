@@ -72,7 +72,7 @@ export default function Navbar() {
                   <img src="/assets/telegram.png" alt="" />
                 </a>
               </div>
-              <a href="https://www.google.com/" onClick={scalehandleClick}>
+              <a href="https://app.thruster.finance/" onClick={scalehandleClick}>
                 <button
                   className="button-filled"
                   style={{
