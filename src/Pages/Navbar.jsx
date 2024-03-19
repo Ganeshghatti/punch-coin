@@ -72,7 +72,7 @@ export default function Navbar() {
                   <img src="/assets/telegram.png" alt="" />
                 </a>
               </div>
-              <a href="https://app.thruster.finance/" onClick={scalehandleClick}>
+              <a href="https://app.thruster.finance" onClick={scalehandleClick}>
                 <button
                   className="button-filled"
                   style={{
@@ -112,7 +112,7 @@ export default function Navbar() {
         <a href="https://t.me/BlastPnch">
           <img src="/assets/telegram.png" alt="" />
         </a>
-        <a href="https://www.google.com/" onClick={scalehandleClick}>
+        <a href="https://app.thruster.finance" onClick={scalehandleClick}>
           <button className="button-filled">Buy Now</button>
         </a>
       </div>
